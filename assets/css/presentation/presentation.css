@@ -1,0 +1,57 @@
+@import "../base/reset.css";
+@import "../base/fonts.css";
+@import "../base/colors.css";
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation {
+    width: 70%;
+    height: 93vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.3em;
+
+    .text-content {
+        width: 65%;
+        h2 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+
+        .social-links {
+            ul {
+                height: 3em;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                li {}
+            }
+        }
+    }
+
+    .image-content {
+        width: 30%;
+        figure {
+            img {
+                border-radius: 50%;
+                border: solid black 1px;
+
+            }
+        }
+    }
+}

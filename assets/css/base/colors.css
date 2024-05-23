@@ -1,0 +1,23 @@
+:root {
+    --color-black-deep: #0D0D0D;
+    --color-black-carbon: #1C1C1C;
+    --color-gray-dark: #2D2D2D;
+    --color-gray-slate: #3F3F3F;
+    --color-gray-graphite: #525252;
+    --color-gray-stone: #666666;
+    --color-gray-cement: #7A7A7A;
+    --color-gray-lead: #8F8F8F;
+    --color-gray-steel: #A3A3A3;
+    --color-gray-smoke: #B8B8B8;
+/* Paleta de colores blancos */
+    --color-white-pure: #FFFFFF;
+    --color-white-smoke: #F5F5F5;
+    --color-white-grayish: #EBEBEB;
+    --color-white-silver: #E1E1E1;
+    --color-white-pearl: #D7D7D7;
+    --color-white-cloud: #CDCDCD;
+    --color-white-light: #C3C3C3;
+    --color-white-ivory: #B9B9B9;
+    --color-white-cream: #AFAFAF;
+    --color-white-bone: #A5A5A5;
+  }

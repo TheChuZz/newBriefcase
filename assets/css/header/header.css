@@ -1,0 +1,135 @@
+@import "../base/reset.css";
+@import "../base/fonts.css";
+@import "../base/colors.css";
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+
+  .btn-clouse {
+    position: fixed;
+    visibility: hidden;
+    right: 5px;
+  }
+
+  .header-fixed {
+    width: 70%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tile-and-icon-menu {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+      }
+
+      .btn-menu {
+        visibility: hidden;
+      }
+    }
+
+    .nav {
+      display: flex;
+      gap: 1em;
+    }
+
+    .nav .nav-link {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      border-left: solid 1px black;
+      padding-left: 5px;
+      transition: color 0.2s ease, font-style 0.2s ease;
+    }
+
+    .nav .nav-link:hover {
+      color: var(--color-gray-slate);
+      font-style: italic;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    .header-fixed {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 876px) {
+  .header {
+    .btn-clouse {
+      height: 2.5em;
+      width: 2.5rem;
+      position: fixed;
+      visibility: hidden;
+      right: 10px;
+      top: 10px;
+      z-index: 1;
+      background-color: rgba(240, 248, 255, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 50%;
+      border: solid 1px white;
+    }
+
+    .btn-clouse:hover {
+      background-color: rgb(137, 137, 137);
+      border: solid 1px aqua;
+    }
+
+    .header-fixed {
+      width: 100%;
+      height: 3em;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .tile-and-icon-menu {
+        h1 {
+          font-size: x-large;
+          font-family: "Roboto", sans-serif;
+          font-weight: 700;
+        }
+
+        .btn-menu {
+          margin: 0 0 0 15px;
+          cursor: pointer;
+          visibility: visible;
+        }
+      }
+
+      .nav {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: none;
+        background-color: black;
+        visibility: hidden;
+
+        .nav-link {
+          color: white;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: xx-large;
+          transition: color 0.2s ease, font-style 0.2s ease;
+          border-bottom: solid white 1px;
+        }
+      }
+    }
+  }
+}

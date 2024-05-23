@@ -1,0 +1,33 @@
+@import "../base/fonts.css";
+@import "../base/colors.css";
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid black 1px;
+}
+
+.footer{
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 2em 0 2em 0;
+
+    .footer-description{
+        font-size: larger;
+    }
+
+    .footer-links{
+        ul{
+            height: 3em;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 1em 0 1em 0;
+        }
+    }
+}
