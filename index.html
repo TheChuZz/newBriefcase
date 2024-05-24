@@ -13,23 +13,25 @@
 
 <body>
     <header class="header">
-        <div class="btn-clouse">
-            <i class="fa-solid fa-x fa-xl" style="color: #ffffff;"></i>
+        <div id="btnClouse" class="btn-clouse" style="visibility: hidden;">
+            <i class="fa-solid fa-x fa-xl"></i>
         </div>
         <nav class="header-fixed">
             <span class="tile-and-icon-menu">
                 <h1>Automatizador de Pruebas QA</h1>
-                <div class="btn-menu">
+                <div id="btnMenu" class="btn-menu">
                     <i class="fa-solid fa-bars fa-xl"></i>
                 </div>
             </span>
-            <ul class="nav">
-                <li class="nav-link"><a href="#">Sobre mi</a></li>
-                <li class="nav-link"><a href="#">Habilidades</a></li>
-                <li class="nav-link"><a href="#">Experiencia</a></li>
-                <li class="nav-link"><a href="#">Proyectos</a></li>
-                <li class="nav-link"><a href="#">Contacto</a></li>
-            </ul>
+            <div id="linksMenuHeader" class="menuLinks">
+                <ul class="nav">
+                    <li class="nav-link"><a href="#">Sobre mi</a></li>
+                    <li class="nav-link"><a href="#">Habilidades</a></li>
+                    <li class="nav-link"><a href="#">Experiencia</a></li>
+                    <li class="nav-link"><a href="#">Proyectos</a></li>
+                    <li class="nav-link"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -82,6 +84,7 @@
             <p>&copy; 2024</p>
         </div>
     </footer>
+    <script type="module" src="assets/js/header/header.js"></script>
+    <script type="module" src="assets/js/header/responsive.js"></script>
 </body>
-
 </html>

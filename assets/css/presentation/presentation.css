@@ -55,3 +55,46 @@ main {
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .presentation {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 911px) {
+    .presentation {
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.3em;
+    
+        .text-content {
+            width: 90%;
+            h2 {
+                text-align: center;
+                line-height: 1em;
+            }
+    
+            p {
+                font-size: large;
+            }
+        }
+
+        .image-content {
+            width: 80%;
+            margin: 0 0 3em 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            figure{
+                img{
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}   
