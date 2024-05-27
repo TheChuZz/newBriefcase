@@ -7,7 +7,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid black 1px;
+    border-top: solid rgb(255, 255, 255) 1px;
+    background-color: var(--color-ivory);
 }
 
 .footer{

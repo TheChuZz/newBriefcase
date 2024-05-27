@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--color-light);
+    text-shadow: 0 0 1px black;
 }
 
 a {
@@ -53,5 +55,18 @@ section {
 }
 
 body{
-    background-color: var(--color-white-smoke);
+    background-color: var(--color-cream);
+}
+
+.title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+@media (max-width: 400px) {
+    .title{
+        font-weight: 600;
+        font-size: large;
+    }
 }
