@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--color-light);
-    text-shadow: 0 0 1px black;
 }
 
 a {
@@ -54,18 +52,77 @@ section {
     display: block;
 }
 
-body{
-    background-color: var(--color-cream);
+body {
+    width: 100%;
+    background-color: var(--color-principal);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.title{
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: x-large;
+/* Efecto de partículas flotantes para toda la página */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(30, 58, 138, 0.1) 2px, transparent 2px),
+        radial-gradient(circle at 80% 20%, rgba(63, 114, 175, 0.1) 1px, transparent 1px),
+        radial-gradient(circle at 40% 80%, rgba(30, 58, 138, 0.05) 3px, transparent 3px);
+    background-size: 100px 100px, 80px 80px, 120px 120px;
+    animation: floatParticles 15s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes floatParticles {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-principal);
+    position: relative;
+    z-index: 1;
+}
+
+.title-nav {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(255,255,255,0.5);
+  position: relative;
+  z-index: 2;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secundario-fuerte), var(--color-principal));
+  margin: 1rem auto 0;
+  border-radius: 2px;
 }
 
 @media (max-width: 400px) {
-    .title{
+    .title {
         font-weight: 600;
         font-size: large;
     }

@@ -7,8 +7,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid rgb(255, 255, 255) 1px;
-    background-color: var(--color-ivory);
+    border-top: solid var(--color-secundario-fuerte) 2px;
+    background-color: var(--color-nav);
 }
 
 .footer{
@@ -17,7 +17,7 @@ footer{
     font-weight: 400;
     text-align: center;
     margin: 2em 0 2em 0;
-
+    
     .footer-description{
         font-size: larger;
     }

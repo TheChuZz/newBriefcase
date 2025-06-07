@@ -1,0 +1,123 @@
+.certificaciones {
+  width: 100%;
+  padding: 4rem 2rem;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes moveBackground {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cert-list li {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(30, 58, 138, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(240, 240, 240, 0.3);
+}
+
+.cert-list li:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(30, 58, 138, 0.2);
+  background: var(--color-nav);
+}
+
+.cert-list a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cert-list a::before {
+  content: '🎓';
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.cert-list a:hover::before {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.cert-list a:hover {
+  color: var(--color-secundario-fuerte);
+  transform: translateX(8px);
+}
+
+/* Efecto especial para el último enlace (todas las certificaciones) */
+.cert-list li:last-child {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, var(--color-secundario), var(--color-secundario-fuerte));
+  color: var(--color-nav);
+}
+
+.cert-list li:last-child:hover {
+  background: linear-gradient(135deg, var(--color-secundario-fuerte), var(--color-secundario));
+  transform: translateY(-8px) scale(1.02);
+}
+
+.cert-list li:last-child a {
+  color: var(--color-nav);
+  font-weight: 700;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.cert-list li:last-child a::before {
+  content: '🏆';
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificaciones {
+    padding: 3rem 1rem;
+  }
+  
+  .certificaciones .title {
+    font-size: 2rem;
+  }
+  
+  .cert-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .cert-list li {
+    padding: 1.2rem;
+  }
+  
+  .cert-list a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificaciones .title {
+    font-size: 1.8rem;
+  }
+  
+  .cert-list li {
+    padding: 1rem;
+  }
+}
