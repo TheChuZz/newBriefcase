@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/header/header.css">
-    <link rel="stylesheet" href="assets/css/portafolio/presentation/presentation.css">
-    <link rel="stylesheet" href="assets/css/footer/footer.css">
-    <link rel="stylesheet" href="assets/css/portafolio/habilidades/habilidades.css">
-    <link rel="stylesheet" href="assets/css/portafolio/experiencia/Experiencia.css">
-    <link rel="stylesheet" href="assets/css/portafolio/certificaciones/certificaciones.css">
-    <link rel="stylesheet" href="assets/css/portafolio/contacto/contacto.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Construcción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primario: #1e3a8a;
+            --color-secundario: #3b82f6;
+            --color-fondo: #f9fafb;
+            --color-texto: #1f2937;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2em;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2em;
+            border: 2px dashed var(--color-primario);
+            border-radius: 1em;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1em;
+            color: var(--color-primario);
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2em;
+        }
+
+        .btn {
+            background-color: var(--color-secundario);
+            color: white;
+            padding: 0.75em 1.5em;
+            border: none;
+            border-radius: 0.5em;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: var(--color-primario);
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-
 <body>
-    <header class="header">
-        <div id="btnClouse" class="btn-clouse" style="visibility: hidden;">
-            <i class="fa-solid fa-x fa-xl"></i>
-        </div>
-        <nav class="header-fixed">
-            <span class="tile-and-icon-menu">
-                <h1 class="title">Code by ChuZz</h1>
-                <div id="btnMenu" class="btn-menu">
-                    <i class="fa-solid fa-bars fa-xl"></i>
-                </div>
-            </span>
-            <div id="linksMenuHeader" class="menuLinks">
-                <ul class="nav">
-                    <li class="nav-link"><a href="#">Inicio</a></li>
-                    <li class="nav-link"><a href="#">Bitácora Dev</a></li>
-                    <li class="nav-link"><a href="#">Aprende</a></li>
-                    <li class="nav-link"><a href="#">portafolio</a></li>
-                    <li class="nav-link"><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="footer-description">
-                <p>Desarrollado por Ruben Esteban Arellano Garcia</p>
-                <p>Automatizador de Pruebas QA</p>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a target="_blank"
-                            href="https://www.linkedin.com/in/ruben-esteban-arellano-garcia-86132a241/"><i
-                                class="fa-brands fa-linkedin fa-shake fa-2xl"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/TheChuZz"><i
-                                class="fa-brands fa-github fa-2xl"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/ruben_arellano13/"><i
-                                class="fa-brands fa-instagram fa-2xl"></i></a></li>
-                </ul>
-            </div>
-            <p>&copy; 2024</p>
-        </div>
-    </footer>
-    <script type="module" src="../assets/js/header/header.js"></script>
-    <script type="module" src="../assets/js/header/responsive.js"></script>
+    <div class="container">
+        <h1>🚧 Página en construcción</h1>
+        <p>Esta sección aún está en desarrollo. ¡Estamos trabajando para traerte algo genial muy pronto!</p>
+        <a href="./pages/portafolio.html" class="btn">Ir al portafolio</a>
+    </div>
 </body>
-
 </html>

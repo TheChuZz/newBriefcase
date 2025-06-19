@@ -1,34 +1,58 @@
 @import "../base/fonts.css";
 @import "../base/colors.css";
 
-
-footer{
+footer {
     width: 100%;
+    background-color: var(--color-nav); 
+    border-top: 2px solid var(--color-secundario-fuerte);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: solid var(--color-secundario-fuerte) 2px;
-    background-color: var(--color-nav);
+    padding: 2em 0;
 }
 
-.footer{
-    width: 70%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+.footer {
+    width: 90%;
+    max-width: 1200px;
     text-align: center;
-    margin: 2em 0 2em 0;
-    
-    .footer-description{
-        font-size: larger;
-    }
+    font-family: 'Roboto', sans-serif;
+}
 
-    .footer-links{
-        ul{
-            height: 3em;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            margin: 1em 0 1em 0;
-        }
+.footer-description {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+    margin: 1em 0;
+    list-style: none;
+}
+
+.footer-links a {
+    color: var(--color-secundario-fuerte);
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 1.8rem;
+}
+
+.footer-links a:hover {
+    color: aqua;
+    transform: scale(1.2);
+}
+
+.footer p:last-of-type {
+    font-size: 0.9rem;
+    margin-top: 1em;
+}
+
+/* Responsive: Móvil */
+@media (max-width: 600px) {
+    .footer-links ul {
+        flex-direction: column;
+        gap: 1em;
     }
 }

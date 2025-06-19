@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/header/header.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer.css">
+    <link rel="stylesheet" href="../assets/css/formulario/formulario.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="header__brand">
+                <img src="../assets/img/icon/archivo-js.png" alt="Logo" class="header__logo">
+                <a href="#" class="header__title">ChuZzCode</a>
+            </div>
+
+            <nav class="nav" id="desktop-nav">
+                <a href="../index.html" class="nav__link active">Inicio</a>
+                <a href="../pages/blog.html" class="nav__link">Sobre Nosotros</a>
+                <a href="../pages/tutoriales.html" class="nav__link">Servicios</a>
+                <a href="../pages/portafolio.html" class="nav__link">Portfolio</a>
+                <a href="../pages/contacto.html" class="nav__link">Contacto</a>
+            </nav>
+
+            <button class="header__menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+        </div>
+
+        <nav class="nav--mobile" id="mobile-nav">
+            <button class="header__close-btn" id="close-btn" aria-label="Cerrar menú">×</button>
+            <a href="../index.html" class="nav__link">Inicio</a>
+            <a href="../pages/blog.html" class="nav__link">Sobre Nosotros</a>
+            <a href="../pages/tutoriales.html" class="nav__link">Servicios</a>
+            <a href="../pages/portafolio.html" class="nav__link">Portfolio</a>
+            <a href="../pages/contacto.html" class="nav__link">Contacto</a>
+        </nav>
+    </header>
+    <main class="main_contacto">
+
+        <div class="container">
+            <div class="form-section">
+                <h2 class="form-title">Contacto</h2>
+                <p class="form-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+
+                <div class="success-message" id="successMessage">
+                    ¡Mensaje enviado exitosamente! Te contactaré pronto.
+                </div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre completo *</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message">Por favor, ingresa tu nombre completo</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message">Por favor, ingresa un correo electrónico válido</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Empresa/Organización</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Asunto *</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <div class="error-message">Por favor, ingresa el asunto del mensaje</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
+                        <div class="error-message">Por favor, ingresa tu mensaje</div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <span class="btn-text">Enviar mensaje</span>
+                        <div class="loading">
+                            <div class="spinner"></div>
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../assets/js/header/header.js"></script>
+    <script type="module" src="../assets/js/header/responsive.js"></script>
+    <script type="module" src="../assets/js/contacto/contacto.js"></script>
+</body>
+
+</html>
